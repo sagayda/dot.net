@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LINQ_to_objects/1.0.0": {
+        "runtime": {
+          "LINQ_to_objects.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LINQ_to_objects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/bin/Debug/net8.0/LINQ_to_objects
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/bin/Debug/net8.0/LINQ_to_objects.deps.json
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/bin/Debug/net8.0/LINQ_to_objects.runtimeconfig.json
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/bin/Debug/net8.0/LINQ_to_objects.dll
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/bin/Debug/net8.0/LINQ_to_objects.pdb
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.GeneratedMSBuildEditorConfig.editorconfig
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.AssemblyInfoInputs.cache
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.AssemblyInfo.cs
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.csproj.CoreCompileInputs.cache
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.dll
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/refint/LINQ_to_objects.dll
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.pdb
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.genruntimeconfig.cache
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/ref/LINQ_to_objects.dll
