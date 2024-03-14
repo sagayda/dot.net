@@ -1,227 +1,31 @@
-﻿using System.Reflection;
-using System.Security.Cryptography;
+﻿using System.Text;
 using LINQ_to_objects;
 
+(var buildings, var tenants) = TestData.GetTestData(1);
 
-(var apartmentHouses, var privateHouses, var tenants) = TestData.GetTestData(1);
-
-void PrintIEnumerable(IEnumerable<object> objects)
+string IEnumerableToString<T>(IEnumerable<T> values)
 {
-	foreach (var item in objects)
-	{
-		System.Console.WriteLine(item);
-	}
-}
+	StringBuilder builder = new();
 
-void PrintIEnumerableFormatted<T>(IEnumerable<T> values, Func<T, string> stringFormatter)
-{
 	foreach (var item in values)
 	{
-		System.Console.WriteLine(stringFormatter(item));
+		builder.AppendLine(item?.ToString());
 	}
+
+	return builder.ToString();
 }
 
-// 1 вивести всіх наймачів
-IEnumerable<Tenant> GetAllTenants()
+string IGroupingToString<K, V>(IEnumerable<IGrouping<K, V>> values)
 {
-	return tenants.Where(tenant => tenant.Address is not null);
-}
+	StringBuilder builder = new();
 
-// 2 вивести всі будівлі
-IEnumerable<Building> GetAllBuildings()
-{
-	IEnumerable<Building> buildings = [];
-	return buildings.Concat(privateHouses).Concat(apartmentHouses);
-}
-
-// 3 вивести адреси всіх будівель
-IEnumerable<Address> GetAllBuldingAddresses()
-{
-	return from building in GetAllBuildings()
-		   select building.Address;
-}
-
-// 4 вивести всі квартири
-IEnumerable<Apartment> GetAllApartments()
-{
-	return apartmentHouses.SelectMany(apartmentHouse => apartmentHouse);
-}
-
-// 5 вивести всіх наймачів з боргом
-IEnumerable<Tenant> GetAllTenantsWithDebt()
-{
-	return from tenant in GetAllTenants()
-		   where tenant.Debt
-		   select tenant;
-}
-
-// 6 вивести всіх наймачів, що живуть в {n} під'їзді
-IEnumerable<Tenant> GetAllTenantsRegisteredAtEntrance(int entranceNumber)
-{
-	return GetAllTenants().Where(tenant => tenant.Address?.EntranceNumber == entranceNumber);
-}
-
-// 7 вивести всіх наймачів, що живуть на вулиці {s}
-IEnumerable<Tenant> GetAllTenantsRegisteredAtStreet(string streetName)
-{
-	return from tenant in GetAllTenants()
-		   where tenant.Address?.StreetName == streetName
-		   select tenant;
-}
-
-// 8 вивести кожне житло (квартири + приватні будинки)
-IEnumerable<IResidential> GetAllResidentials()
-{
-	IEnumerable<IResidential> residentials = [];
-	return residentials.Concat(privateHouses).Concat(GetAllApartments());
-}
-
-// 9 вивести всіх наймачів, що мають {n} кімнатну квартиру / будинок
-IEnumerable<Tenant> GetAllTenantsWithRooms(int roomsCount)
-{
-	return from threeRoomResidential in
-				(from residential in GetAllResidentials()
-				 where residential.RoomsCount == roomsCount
-				 select residential)
-		   join tenant in GetAllTenants() on threeRoomResidential.Address equals tenant.Address
-		   select tenant;
-}
-
-// 10 вивести кожне житло, наймач якого зареєстрований пізніше між {t}
-IEnumerable<IResidential> GetAllResidentialsRegisteredLaterThen(DateOnly date)
-{
-	var selectedTenants = GetAllTenants().Where(tenant => tenant.RegistrationDate > date);
-	
-	return from apartment in GetAllApartments()
-		   where selectedTenants.Any(tenant => tenant.Address is not null && tenant.Address.Equals(apartment.Address))
-		   select apartment;
-}
-
-// 11 вивести наймачів, що мають приватний будинок
-IEnumerable<Tenant> GetAllTenantsRegisteredAtPrivateHouse()
-{
-	return from tenant in tenants
-		   where privateHouses.Any(house => house.Address.Equals(tenant.Address))
-		   select tenant;
-}
-
-// 12 вивести наймача, що має {n} поверхове житло
-IEnumerable<Tenant> GetAllTenantsWithFloors(int floorsCount)
-{
-	return GetAllTenants()
-	.Join(GetAllResidentials(),
-	   tenant => tenant.Address,
-	   residential => residential.Address,
-	   (tenant, residential) => new { Tenant = tenant, Residential = residential })
-	.Where(pair => pair.Residential.FloorsCount == floorsCount)
-	.Select(pair => pair.Tenant);
-}
-
-// 13 житло, відсортоване по площі
-IEnumerable<IResidential> GetResidentialSortedByArea()
-{
-	return from residential in GetAllResidentials()
-		   orderby residential.TotalArea
-		   select residential;
-}
-
-// 14 вивести наймачів з унікальною фамілією
-IEnumerable<Tenant> GetAllTenantsWithUniqLastname()
-{
-	return GetAllTenants().DistinctBy(tenant => tenant.Lastname);
-}
-
-// 15 відсортувати квартири за кількістю поверхів, кімнат та площею
-IEnumerable<Apartment> GetApartmentsSortedByFloorsRoomsArea()
-{
-	return GetAllApartments()
-	.OrderByDescending(apartment => apartment.FloorsCount)
-	.ThenByDescending(apartment => apartment.RoomsCount)
-	.ThenByDescending(apartment => apartment.EffectiveArea);
-}
-
-// 16 вивести адреси квартир, згрупованих по кількості кімнат
-void PrintApartmentAddressesGrouppedByRoomsCount()
-{
-	var res = GetAllApartments().GroupBy(apartment => apartment.RoomsCount);
-
-	foreach (var item in res)
+	foreach (var item in values)
 	{
-		System.Console.WriteLine($"\n\n====================\n\n\t{item.Key} rooms:");
-		foreach (var apartment in item)
-		{
-			System.Console.WriteLine(apartment);
-		}
+		builder.AppendLine($"===================\nGroup: {item.Key}\n");
+		builder.Append(IEnumerableToString(item));
 	}
-}
 
-// 17 вивести наймач + квартира з будинку {b}
-void PrintTenantWithApartmentFromBuildingWithAddress(Address address)
-{
-	var house = apartmentHouses.First(house => house.Address.Equals(address));
-
-	if (house == null)
-		return;
-
-	var res = from apartment in house
-			  join tenant in tenants on apartment.Address equals tenant.Address
-			  select new { Tenant = tenant, Apartment = apartment };
-
-	foreach (var item in res)
-	{
-		System.Console.WriteLine("-----------------");
-		System.Console.WriteLine(item.Tenant);
-		System.Console.WriteLine(item.Apartment);
-	}
-}
-
-// 18 вивести всіх наймачів, згрупованих по типу квартир, що вони знімають
-void PrintTenantsGroupByApartmentType()
-{
-	var res = GetAllTenants()
-	.Join(GetAllApartments(),
-	   tenant => tenant.Address,
-	   apartment => apartment.Address,
-	   (tenant, apartment) => new { Tenant = tenant, ApartmentType = apartment.Type })
-	.GroupBy(pair => pair.ApartmentType);
-
-	foreach (var item in res)
-	{
-		System.Console.WriteLine($"\n\n\tType: {item.Key}\n\n");
-
-		foreach (var tenant in item)
-		{
-			System.Console.WriteLine(tenant.Tenant);
-		}
-	}
-}
-
-// 19 ПІ наймача + площа житла (включаючи null) + сортування
-void PrintTenantAndArea()
-{
-	var res = from tenant in tenants
-			  join residential in GetAllResidentials() on tenant.Address equals residential.Address into temp
-			  from t in temp.DefaultIfEmpty()
-			  orderby t is null ? 0 : t.TotalArea descending
-			  select new { TenantName = tenant.Name, TenantLastName = tenant.Lastname, Area = (t is null) ? "null" : t.TotalArea.ToString() };
-
-	foreach (var item in res)
-	{
-		System.Console.WriteLine($"{item.TenantName} {item.TenantLastName}, Area: {item.Area}");
-	}
-}
-
-// 20 вивести ПІ наймача, площу житла та адресу
-void PrintTenantAndAreaAndAdrress()
-{
-	var res = from tenant in tenants
-			  join residential in GetAllResidentials() on tenant.Address equals residential.Address
-			  select new { TenentName = tenant.Name, TenantLastName = tenant.Lastname, Area = residential.TotalArea, Address = residential.Address };
-
-	foreach (var item in res)
-	{
-		System.Console.WriteLine($"{item.TenentName} {item.TenantLastName}, Area: {item.Area}, Address: {item.Address}");
-	}
+	return builder.ToString();
 }
 
 void ShowMenu()
@@ -229,33 +33,33 @@ void ShowMenu()
 	System.Console.WriteLine("\n\n\n\n");
 	string menu = """
 	1 - Вивести всіх наймачів
-	2 - Вивести всі будівлі
-	3 - Вивести адреси всіх будівель
-	4 - Вивести всі квартири
-	5 - Вивести всіх наймачів з боргом
-	6 - Вивести всіх наймачів, що живуть в {2} під'їзді
-	7 - Вивести всіх наймачів, що живуть на вулиці {Лісова}
-	8 - Вивести кожне житло (квартири + приватні будинки)
-	9 - Вивести всіх наймачів, що мають {3} кімнатну квартиру / будинок
-	10 - Вивести кожне житло, наймач якого зареєстрований пізніше між 01.01.2019
-	11 - Вивести наймачів, що мають приватний будинок
-	12 - Вивести наймача, що має {2} поверхове житло
-	13 - Вивести житло, відсортоване по площі
-	14 - Вивести наймачів з унікальною фамілією
-	15 - Відсортувати квартири за кількістю поверхів, кімнат та площею
-	16 - Вивести адреси квартир, згрупованих по кількості кімнат
-	17 - Вивести наймач + квартира з будинку за адресою Луцьк, Спортивна 57
-	18 - Вивести всіх наймачів, згрупованих по типу квартир, що вони знімають
-	19 - ПІ наймача + площа житла (включаючи null) + сортування
-	20 - ПІ наймача + площа житла + адреса
+	2 - Вивести адреси всіх будівель
+	3 - Вивести всі квартири
+	4 - Вивести всіх наймачів з боргом
+	5 - Вивести всіх наймачів, що живуть в 2 під'їзді
+	6 - Вивести всіх наймачів, що живуть на вулиці Молодіжна
+	7 - Вивести кожне житло (квартири + приватні будинки)
+	8 - Вивести всіх наймачів, що мають 3 кімнатну квартиру / будинок
+	9 - Вивести кожне житло, що зареєстроване за наймачем піжніше ніж 01.01.2019
+	10 - Вивести наймачів, що мають приватний будинок
+	11 - Вивести житло, відсортоване по площі
+	12 - Вивести наймачів з унікальною фамілією
+	13 - Вивести відсортоване житло за кількістю поверхів, кімнат та площею
+	14 - Вивести житло, згруповане по кількості кімнат 
+	15 - Вивести наймач + житло
+	16 - Вивести наймач + квартира з будинку за адресою Рівне, Лісова 76
+	17 - Вивести всіх наймачів, згрупованих по типу квартир, що вони знімають
+	18 - Вивести житло, згруповане по наймачу
+	19 - Вивести житло, наймач якого має тільки одне житло
+	20 - Вивести наймачів, що реєстрували нове житло з 01.01.2015 до 01.01.2017
 	
 	Вибір: 
-	""";	
+	""";
 	System.Console.Write(menu);
-	
+
 	string? choise = Console.ReadLine();
-	
-	if(choise is null)
+
+	if (choise is null)
 		return;
 
 
@@ -265,64 +69,64 @@ void ShowMenu()
 	switch (variant)
 	{
 		case 1:
-			PrintIEnumerable(GetAllTenants());
+			System.Console.WriteLine(IEnumerableToString(GetAllTenants()));
 			break;
 		case 2:
-			PrintIEnumerable(GetAllBuildings());
+			System.Console.WriteLine(IEnumerableToString(GetAllBuldingAddresses()));
 			break;
 		case 3:
-			PrintIEnumerable(GetAllBuldingAddresses());
+			System.Console.WriteLine(IEnumerableToString(GetAllApartments()));
 			break;
 		case 4:
-			PrintIEnumerable(GetAllApartments());
+			System.Console.WriteLine(IEnumerableToString(GetTenantsWithDebt()));
 			break;
 		case 5:
-			PrintIEnumerable(GetAllTenantsWithDebt());
+			System.Console.WriteLine(IEnumerableToString(GetTenantsRegisteredAtEntrance(2)));
 			break;
 		case 6:
-			PrintIEnumerable(GetAllTenantsRegisteredAtEntrance(2));
+			System.Console.WriteLine(IEnumerableToString(GetTenantsRegisteredAtStreet("Молодіжна")));
 			break;
 		case 7:
-			PrintIEnumerable(GetAllTenantsRegisteredAtStreet("Лісова"));
+			System.Console.WriteLine(IEnumerableToString(GetAllResidentials()));
 			break;
 		case 8:
-			PrintIEnumerable(GetAllResidentials());
+			System.Console.WriteLine(IEnumerableToString(GetTenantsWithRooms(3)));
 			break;
 		case 9:
-			PrintIEnumerable(GetAllTenantsWithRooms(3));
+			System.Console.WriteLine(IEnumerableToString(GetResidentialsRegisteredLaterThen(new(2019,01,01))));
 			break;
 		case 10:
-			PrintIEnumerable(GetAllResidentialsRegisteredLaterThen(new(2019,1,1)));
+			System.Console.WriteLine(IEnumerableToString(GetTenantsRegisteredAtPrivateHouse()));
 			break;
 		case 11:
-			PrintIEnumerable(GetAllTenantsRegisteredAtPrivateHouse());
+			System.Console.WriteLine(IEnumerableToString(GetResidentialSortedByArea()));
 			break;
 		case 12:
-			PrintIEnumerable(GetAllTenantsWithFloors(2));
+			System.Console.WriteLine(IEnumerableToString(GetTenantsWithUniqLastname()));
 			break;
 		case 13:
-			PrintIEnumerable(GetResidentialSortedByArea());
+			System.Console.WriteLine(IEnumerableToString(GetResidentialsSortedByFloorsRoomsArea()));
 			break;
 		case 14:
-			PrintIEnumerable(GetAllTenantsWithUniqLastname());
+			System.Console.WriteLine(IGroupingToString(GetResidentialsGrouppedByRoomsCount()));
 			break;
 		case 15:
-			PrintIEnumerable(GetApartmentsSortedByFloorsRoomsArea());
+			System.Console.WriteLine(IEnumerableToString(GetTenantsWithResidential()));
 			break;
 		case 16:
-			PrintApartmentAddressesGrouppedByRoomsCount();
+			System.Console.WriteLine(IEnumerableToString(GetTenantWithApartmentFromBuildingWithAddress(new BuildingAddress("Рівне","Лісова","76"))));
 			break;
 		case 17:
-			PrintTenantWithApartmentFromBuildingWithAddress(new("Луцьк","Спортивна","57"));
+			System.Console.WriteLine(IGroupingToString(GetTenantsGroupByApartmentType()));
 			break;
 		case 18:
-			PrintTenantsGroupByApartmentType();
+			System.Console.WriteLine(IGroupingToString(GetResidentialGroupByTenant()));
 			break;
 		case 19:
-			PrintTenantAndArea();
+			System.Console.WriteLine(IEnumerableToString(GetResidentialsWithTenantWithOneRegistration()));
 			break;
 		case 20:
-			PrintTenantAndAreaAndAdrress();
+			System.Console.WriteLine(IEnumerableToString(GetTenantsWhoHasRegistration(new(2015,1,1),new(2020,1,1))));
 			break;
 		default:
 			return;
@@ -330,4 +134,184 @@ void ShowMenu()
 }
 
 while(true)
+{
 	ShowMenu();
+}
+
+
+//
+// 1 вивести всіх наймачів
+IEnumerable<Tenant> GetAllTenants()
+{
+	return tenants.Where(tenant => tenant.Any());
+}
+
+// 2 вивести адреси всіх будівель
+IEnumerable<Address> GetAllBuldingAddresses()
+{
+	return from building in buildings
+		   select building.Address;
+}
+
+//
+// 3 вивести всі квартири
+IEnumerable<Apartment> GetAllApartments()
+{
+	return from building in buildings
+		   where building is ApartmentHouse
+		   from apartment in (ApartmentHouse)building
+		   select apartment;
+}
+
+// 4 вивести всіх наймачів з боргом
+IEnumerable<Tenant> GetTenantsWithDebt()
+{
+	return from tenant in GetAllTenants()
+		   where tenant.Debt
+		   select tenant;
+}
+
+//
+// 5 вивести всіх наймачів, що живуть в {n} під'їзді
+IEnumerable<Tenant> GetTenantsRegisteredAtEntrance(int entranceNumber)
+{
+	return GetAllTenants().Where(tenant => tenant.Any(registration => registration.Address is ApartmentAddress address && address.EntranceNumber == entranceNumber));
+}
+
+//
+// 6 вивести всіх наймачів, що живуть на вулиці {s}
+IEnumerable<Tenant> GetTenantsRegisteredAtStreet(string streetName)
+{
+	return GetAllTenants()
+	.Where(tenant => tenant
+	.Any(registration => registration.Address.Street == streetName));
+}
+
+// 7 вивести кожне житло (квартири + приватні будинки)
+IEnumerable<IResidentialWithAddress> GetAllResidentials()
+{
+	var privateResidentials = buildings.OfType<PrivateHouse>().Select(house => new IResidentialWithAddress(house, house.Address));
+	var apartmentResidentials = buildings.OfType<ApartmentHouse>().SelectMany(apartmentHouse => apartmentHouse).Select(apartment => new IResidentialWithAddress(apartment, apartment.Address)).ToList();
+
+	return privateResidentials.Concat(apartmentResidentials);
+}
+
+// 8 вивести всіх наймачів, що мають {n} кімнатну квартиру / будинок
+IEnumerable<Tenant> GetTenantsWithRooms(int roomsCount)
+{
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   from residential in GetAllResidentials()
+		   where residential.Residential.RoomsCount == roomsCount
+		   where residential.Address.Equals(registration.Address)
+		   select tenant;
+}
+
+// 9 вивести кожне житло, що зареєстроване за наймачем піжніше ніж {t}
+IEnumerable<IResidential> GetResidentialsRegisteredLaterThen(DateOnly date)
+{
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   from residential in GetAllResidentials()
+		   where registration.Date > date
+		   where residential.Address.Equals(registration.Address)
+		   select residential.Residential;
+}
+
+// 10 вивести наймачів, що мають приватний будинок
+IEnumerable<Tenant> GetTenantsRegisteredAtPrivateHouse()
+{
+	return from building in buildings
+		   where building is PrivateHouse
+		   select building.Address into selectedAddress
+		   from tenant in tenants
+		   where tenant.Any(registration => registration.Address == selectedAddress)
+		   select tenant;
+}
+
+// 11 житло, відсортоване по площі
+IEnumerable<IResidential> GetResidentialSortedByArea()
+{
+	return GetAllResidentials().OrderByDescending(record => record.Residential.TotalArea).Select(record => record.Residential);
+}
+
+// 12 вивести наймачів з унікальною фамілією
+IEnumerable<Tenant> GetTenantsWithUniqLastname()
+{
+	return GetAllTenants().DistinctBy(tenant => tenant.Lastname);
+}
+
+// 13 відсортувати житло за кількістю поверхів, кімнат та площею
+IEnumerable<IResidential> GetResidentialsSortedByFloorsRoomsArea()
+{
+	return GetAllResidentials()
+			.Select(record => record.Residential)
+			.OrderByDescending(apartment => apartment.FloorsCount)
+			.ThenByDescending(apartment => apartment.RoomsCount)
+			.ThenByDescending(apartment => apartment.EffectiveArea);
+}
+
+// 14 вивести житло, згруповане по кількості кімнат
+IEnumerable<IGrouping<int, IResidentialWithAddress>> GetResidentialsGrouppedByRoomsCount()
+{
+	return from record in GetAllResidentials()
+		   orderby record.Residential.RoomsCount
+		   group record by record.Residential.RoomsCount;
+}
+
+// 15 наймач + житло
+IEnumerable<TenantWithResidential> GetTenantsWithResidential()
+{
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   join record in GetAllResidentials() on registration.Address equals record.Address
+		   select new TenantWithResidential(tenant, record.Residential);
+}
+
+// 16 вивести наймач + квартира з будинку {b}
+IEnumerable<TenantWithResidential> GetTenantWithApartmentFromBuildingWithAddress(Address address)
+{
+	if (buildings.First(building => building.Address.Equals(address) && building is ApartmentHouse) is not ApartmentHouse apartmentHouse)
+		return [];
+
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   join apartment in GetAllApartments() on registration.Address equals apartment.Address
+		   select new TenantWithResidential(tenant, apartment);
+}
+
+// 17 вивести всіх наймачів, згрупованих по типу квартир, що вони знімають
+IEnumerable<IGrouping<ApartmentType, Tenant>> GetTenantsGroupByApartmentType()
+{
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   join apartment in GetAllApartments() on registration.Address equals apartment.Address
+		   group tenant by apartment.Type;
+}
+
+// 18 житло, згруповане по наймачу
+IEnumerable<IGrouping<Tenant, IResidential>> GetResidentialGroupByTenant()
+{
+	return from tenant in GetAllTenants()
+		   from registration in tenant
+		   join record in GetAllResidentials() on registration.Address equals record.Address
+		   group record.Residential by tenant;
+
+}
+
+// 19 житло, наймач якого має тільки одне житло 
+IEnumerable<IResidential> GetResidentialsWithTenantWithOneRegistration()
+{
+	return from tenant in GetAllTenants()
+		   where tenant.Count() == 1
+		   from registration in tenant
+		   join record in GetAllResidentials() on registration.Address equals record.Address
+		   select record.Residential;
+}
+
+// 20 наймачі, що реєстрували нове житло з {t1} до {t2}
+IEnumerable<Tenant> GetTenantsWhoHasRegistration(DateOnly fromDate, DateOnly toDate)
+{
+	return GetAllTenants()
+		   .Where(tenant => tenant.Any(registration => fromDate < registration.Date && toDate > registration.Date));
+}

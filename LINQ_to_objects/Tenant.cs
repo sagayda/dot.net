@@ -2,40 +2,43 @@
 
 namespace LINQ_to_objects;
 
-public class Tenant
+public class Tenant(string name,
+				string lastname,
+				string middlename,
+				int familyMemberCount,
+				int childrenCount,
+				bool debt) : IEnumerable<Registration>
 {
-	public Tenant(string name,
-					string lastname,
-					string middlename,
-					int familyMemberCount,
-					int childrenCount,
-					bool debt)
-	{
-		Name = name;
-		Lastname = lastname;
-		Middlename = middlename;
-		FamilyMembersCount = familyMemberCount;
-		ChildrenCount = childrenCount;
-		Debt = debt;
-	}
-	
-	public string Name {get;}
-	public string Lastname {get; }
-	public string Middlename {get; }
-	public int FamilyMembersCount {get; set;}
-	public int ChildrenCount {get; set;}
-	public bool Debt {get; set;} = false;
-	public Address? Address {get; private set;}
-	public DateOnly? RegistrationDate {get; private set; }
+	private readonly List<Registration> _registrations = [];
+	public string Name { get; } = name;
+	public string Lastname { get; } = lastname;
+	public string Middlename { get; } = middlename;
+	public int FamilyMembersCount { get; set; } = familyMemberCount;
+	public int ChildrenCount { get; set; } = childrenCount;
+	public bool Debt { get; set; } = debt;
 
 	public override string ToString()
 	{
-		return $"{Lastname} {Name} {Middlename}\tFamily: {FamilyMembersCount}[m] {ChildrenCount}[c]\tDebt: {Debt}\tAddress: {Address}\tRegistration date: {RegistrationDate}";
+		return $"{Lastname} {Name} {Middlename}\tFamily: {FamilyMembersCount}[m] {ChildrenCount}[c]\tDebt: {Debt}\tRegistrations: {_registrations.Count}";
 	}
 	
-	public void SetRegistration (Address address, DateOnly date)
+	public void AddRegistration (Registration registration)
 	{
-		Address = address;
-		RegistrationDate = date;
+		_registrations.Add(registration);
+	}
+	
+	public void RemoveRegistration (Registration registration)
+	{
+		_registrations.Remove(registration);
+	}
+
+	public IEnumerator<Registration> GetEnumerator()
+	{
+		return _registrations.GetEnumerator();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return GetEnumerator();
 	}
 }

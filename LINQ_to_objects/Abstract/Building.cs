@@ -1,12 +1,12 @@
 ﻿namespace LINQ_to_objects;
 
-public abstract class Building(Address address, string type)
+public abstract class Building(BuildingAddress address, BuildingType type)
 {
-	public Address Address { get; } = address;
-	public string Type { get; } = type;
+	public BuildingAddress Address { get; } = address;
+	public BuildingType BuildingType { get; } = type;
 
     public override string ToString()
     {
-        return $"Address: {Address}\tType: {Type}";
+        return $"Address: {Address}\tType: {BuildingType}";
     }
 }

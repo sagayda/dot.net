@@ -6,5 +6,4 @@ public interface IResidential
 	public float EffectiveArea { get; }
 	public int RoomsCount { get; }
 	public int FloorsCount { get; }
-	public Address Address { get; }
 }

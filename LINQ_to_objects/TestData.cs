@@ -64,80 +64,215 @@ public static class TestData
 		return _middlenames[_random.Next(0, _middlenames.Length - 1)];
 	}
 
-	public static Address GetHouseAddress()
+	// public static Address GetHouseAddress()
+	// {
+	// 	return new(_cities[_random.Next(0, _cities.Length - 1)],
+	// 		 _streets[_random.Next(0, _streets.Length - 1)],
+	// 		 _random.Next(0, 100).ToString());
+	// }
+
+	// public static Address GetApartmentAddress(Address houseAddress)
+	// {
+	// 	return new(houseAddress.City,
+	// 		 houseAddress.StreetName,
+	// 		 houseAddress.Number,
+	// 		 _random.Next(0, 10),
+	// 		 _random.Next(0, 200));
+	// }
+
+	// public static Tenant GetTenant()
+	// {
+	// 	return new Tenant(GetName(), GetLastname(), GetMiddlename(), _random.Next(0, 5), _random.Next(0, 3), _random.Next(0, 100) > 80);
+	// }
+
+	// public static List<Tenant> GetTenant(int count)
+	// {
+	// 	List<Tenant> tenants = [];
+
+	// 	for (int i = 0; i < count; i++)
+	// 		tenants.Add(GetTenant());
+
+	// 	return tenants;
+	// }
+
+	// public static List<Tenant> GetTenantsForAppartmentHouse(ApartmentHouse house)
+	// {
+	// 	List<Tenant> tenants = [];
+
+	// 	foreach (var apartment in house)
+	// 	{
+	// 		Tenant currentTenant = GetTenant();
+	// 		currentTenant.SetRegistration(apartment.Address, new DateOnly(_random.Next(2000, 2024), _random.Next(1, 13), _random.Next(1, 29)));
+	// 		tenants.Add(currentTenant);
+	// 	}
+
+	// 	return tenants;
+	// }
+
+	// public static Tenant GetTenantForPrivateHouse(PrivateHouse house)
+	// {
+	// 	Tenant tenant = GetTenant();
+	// 	tenant.SetRegistration(house.Address, new DateOnly(_random.Next(2000, 2024), _random.Next(1, 13), _random.Next(1, 29)));
+	// 	return tenant;
+	// }
+
+	// public static List<Address> GetApartmentAddress(Address houseAddress, int count)
+	// {
+	// 	List<Address> addresses = [];
+
+	// 	int entrancesNumber = _random.Next(1, 5);
+	// 	int apartmentsInEntrance = (int)Math.Ceiling((float)count / entrancesNumber);
+
+	// 	for (int i = 1; i <= count; i++)
+	// 	{
+	// 		addresses.Add(new(houseAddress.City, houseAddress.StreetName, houseAddress.Number, (int)Math.Ceiling(i / (float)apartmentsInEntrance), i));
+	// 	}
+
+	// 	return addresses;
+	// }
+
+	// public static List<Apartment> GetApartments(Address houseAddress, int count)
+	// {
+	// 	var addresses = GetApartmentAddress(houseAddress, count);
+
+	// 	List<Apartment> apartments = [];
+	// 	foreach (var address in addresses)
+	// 	{
+	// 		int area = _random.Next(20, 150);
+	// 		float effectiveArea = _random.Next(area - area / 2, area - area / 4);
+
+	// 		int roomsCount;
+	// 		int floorsCount = 1;
+
+	// 		if (area < 30)
+	// 		{
+	// 			roomsCount = 1;
+	// 		}
+	// 		else if (area < 50)
+	// 		{
+	// 			roomsCount = 2;
+	// 		}
+	// 		else if (area < 80)
+	// 		{
+	// 			roomsCount = 3;
+	// 		}
+	// 		else if (area < 120)
+	// 		{
+	// 			roomsCount = 4;
+	// 		}
+	// 		else
+	// 		{
+	// 			roomsCount = 5;
+	// 			floorsCount = 2;
+	// 		}
+
+	// 		apartments.Add(new Apartment(address, $"type{_random.Next(1, 5)}", area, effectiveArea, roomsCount, floorsCount));
+	// 	}
+
+	// 	return apartments;
+	// }
+
+	// public static PrivateHouse GetPrivateHouse()
+	// {
+	// 	Address address = GetHouseAddress();
+
+	// 	int area = _random.Next(20, 300);
+	// 	float effectiveArea = _random.Next(area - area / 2, area - area / 4);
+
+	// 	int roomsCount;
+	// 	int floorsCount = 1;
+
+	// 	if (area < 30)
+	// 	{
+	// 		roomsCount = 2;
+	// 	}
+	// 	else if (area < 80)
+	// 	{
+	// 		roomsCount = 3;
+	// 	}
+	// 	else if (area < 120)
+	// 	{
+	// 		roomsCount = 3;
+	// 	}
+	// 	else if (area < 180)
+	// 	{
+	// 		floorsCount = 2;
+	// 		roomsCount = 4;
+	// 	}
+	// 	else if (area < 250)
+	// 	{
+	// 		floorsCount = 2;
+	// 		roomsCount = 5;
+	// 	}
+	// 	else
+	// 	{
+	// 		roomsCount = 6;
+	// 		floorsCount = 3;
+	// 	}
+
+	// 	return new PrivateHouse(address, $"privateHouseType{_random.Next(1, 5)}", area, effectiveArea, roomsCount, floorsCount);
+	// }
+
+	// public static (ApartmentHouse House,IEnumerable<Tenant> Tenants) GetApartmentHouseWithTenants(int apartmentsCount, string type)
+	// {
+	// 	var address = GetHouseAddress();
+	// 	ApartmentHouse apartmentHouse = new(address,type);
+	// 	apartmentHouse.AddApertment(GetApartments(address,apartmentsCount));
+
+	// 	var tenants = GetTenantsForAppartmentHouse(apartmentHouse);
+
+	// 	return (apartmentHouse, tenants);
+	// }
+
+	// public static (IEnumerable<ApartmentHouse> ApartmentHouses, IEnumerable<PrivateHouse> PrivateHouses, IEnumerable<Tenant> Tenants) GetTestData(float volume)
+	// {
+	// 	int apartmentHousesCount = (int)Math.Ceiling(volume * 3);
+	// 	int privateHousesCount = (int)Math.Ceiling(volume * 5);
+
+	// 	List<ApartmentHouse> apartmentHouses = [];
+	// 	List<PrivateHouse> privateHouses = [];
+	// 	List<Tenant> tenants = [];
+
+	// 	for (int i = 0; i < apartmentHousesCount; i++)
+	// 	{
+	// 		var (House, Tenants) = GetApartmentHouseWithTenants((int)Math.Ceiling((i+1) * 10 * volume), $"type{i}");
+	// 		apartmentHouses.Add(House);
+	// 		tenants.AddRange(Tenants);
+	// 	}
+
+	// 	for (int i = 0; i < privateHousesCount; i++)
+	// 	{
+	// 		var house = GetPrivateHouse();
+	// 		var tenant = GetTenantForPrivateHouse(house);
+	// 		privateHouses.Add(house);
+	// 		tenants.Add(tenant);
+	// 	}
+
+	// 	for (int i = 0; i < (int)Math.Ceiling(volume * 3); i++)
+	// 	{
+	// 		tenants.Add(GetTenant());
+	// 	}
+
+	// 	return (apartmentHouses,privateHouses,tenants);
+	// }
+
+	public static BuildingAddress GetBuildingAddress()
 	{
 		return new(_cities[_random.Next(0, _cities.Length - 1)],
 			 _streets[_random.Next(0, _streets.Length - 1)],
 			 _random.Next(0, 100).ToString());
 	}
 
-	public static Address GetApartmentAddress(Address houseAddress)
+	public static List<Apartment> GetApartments(BuildingAddress apartmentHouseAddress, int count)
 	{
-		return new(houseAddress.City,
-			 houseAddress.StreetName,
-			 houseAddress.Number,
-			 _random.Next(0, 10),
-			 _random.Next(0, 200));
-	}
-
-	public static Tenant GetTenant()
-	{
-		return new Tenant(GetName(), GetLastname(), GetMiddlename(), _random.Next(0, 5), _random.Next(0, 3), _random.Next(0, 100) > 80);
-	}
-
-	public static List<Tenant> GetTenant(int count)
-	{
-		List<Tenant> tenants = [];
-
-		for (int i = 0; i < count; i++)
-			tenants.Add(GetTenant());
-
-		return tenants;
-	}
-
-	public static List<Tenant> GetTenantsForAppartmentHouse(ApartmentHouse house)
-	{
-		List<Tenant> tenants = [];
-
-		foreach (var apartment in house)
-		{
-			Tenant currentTenant = GetTenant();
-			currentTenant.SetRegistration(apartment.Address, new DateOnly(_random.Next(2000, 2024), _random.Next(1, 13), _random.Next(1, 29)));
-			tenants.Add(currentTenant);
-		}
-
-		return tenants;
-	}
-
-	public static Tenant GetTenantForPrivateHouse(PrivateHouse house)
-	{
-		Tenant tenant = GetTenant();
-		tenant.SetRegistration(house.Address, new DateOnly(_random.Next(2000, 2024), _random.Next(1, 13), _random.Next(1, 29)));
-		return tenant;
-	}
-	
-	public static List<Address> GetApartmentAddress(Address houseAddress, int count)
-	{
-		List<Address> addresses = [];
-
 		int entrancesNumber = _random.Next(1, 5);
 		int apartmentsInEntrance = (int)Math.Ceiling((float)count / entrancesNumber);
 
+		List<Apartment> apartments = [];
 		for (int i = 1; i <= count; i++)
 		{
-			addresses.Add(new(houseAddress.City, houseAddress.StreetName, houseAddress.Number, (int)Math.Ceiling(i / (float)apartmentsInEntrance), i));
-		}
+			ApartmentAddress apartmentAddress = new(apartmentHouseAddress.City, apartmentHouseAddress.Street, apartmentHouseAddress.Number, i, (int)Math.Ceiling(i / (float)apartmentsInEntrance));
 
-		return addresses;
-	}
-
-	public static List<Apartment> GetApartments(Address houseAddress, int count)
-	{
-		var addresses = GetApartmentAddress(houseAddress, count);
-
-		List<Apartment> apartments = [];
-		foreach (var address in addresses)
-		{
 			int area = _random.Next(20, 150);
 			float effectiveArea = _random.Next(area - area / 2, area - area / 4);
 
@@ -166,15 +301,30 @@ public static class TestData
 				floorsCount = 2;
 			}
 
-			apartments.Add(new Apartment(address, $"type{_random.Next(1, 5)}", area, effectiveArea, roomsCount, floorsCount));
+			apartments.Add(new Apartment(apartmentAddress,
+								(ApartmentType)_random.Next(0, Enum.GetValues(typeof(ApartmentType)).Length),
+								area,
+								effectiveArea,
+								roomsCount,
+								floorsCount));
 		}
 
 		return apartments;
 	}
 
+	public static ApartmentHouse GetApartmentHouse(int apartmentsCount)
+	{
+		BuildingAddress address = GetBuildingAddress();
+		ApartmentHouse house = new(address, (ApartmentHouseType)_random.Next(0, Enum.GetValues(typeof(ApartmentHouseType)).Length));
+
+		house.AddApertment(GetApartments(address, apartmentsCount));
+
+		return house;
+	}
+
 	public static PrivateHouse GetPrivateHouse()
 	{
-		Address address = GetHouseAddress();
+		BuildingAddress address = GetBuildingAddress();
 
 		int area = _random.Next(20, 300);
 		float effectiveArea = _random.Next(area - area / 2, area - area / 4);
@@ -210,49 +360,60 @@ public static class TestData
 			floorsCount = 3;
 		}
 
-		return new PrivateHouse(address, $"privateHouseType{_random.Next(1, 5)}", area, effectiveArea, roomsCount, floorsCount);
+		return new PrivateHouse(address,
+						  (PrivateHouseType)_random.Next(0, Enum.GetValues(typeof(PrivateHouseType)).Length),
+						  area,
+						  effectiveArea,
+						  roomsCount,
+						  floorsCount);
 	}
 
-	public static (ApartmentHouse House,IEnumerable<Tenant> Tenants) GetApartmentHouseWithTenants(int apartmentsCount, string type)
+	public static Tenant GetTenant()
 	{
-		var address = GetHouseAddress();
-		ApartmentHouse apartmentHouse = new(address,type);
-		apartmentHouse.AddApertment(GetApartments(address,apartmentsCount));
-		
-		var tenants = GetTenantsForAppartmentHouse(apartmentHouse);
-		
-		return (apartmentHouse, tenants);
+		return new Tenant(GetName(), GetLastname(), GetMiddlename(), _random.Next(0, 5), _random.Next(0, 3), _random.Next(0, 100) > 80);
 	}
-	
-	public static (IEnumerable<ApartmentHouse> ApartmentHouses, IEnumerable<PrivateHouse> PrivateHouses, IEnumerable<Tenant> Tenants) GetTestData(float volume)
+
+	public static (IEnumerable<Building> Buildings, IEnumerable<Tenant> Tenants) GetTestData(float volume)
 	{
 		int apartmentHousesCount = (int)Math.Ceiling(volume * 3);
 		int privateHousesCount = (int)Math.Ceiling(volume * 5);
-		
+
 		List<ApartmentHouse> apartmentHouses = [];
 		List<PrivateHouse> privateHouses = [];
 		List<Tenant> tenants = [];
-		
+
 		for (int i = 0; i < apartmentHousesCount; i++)
 		{
-			var (House, Tenants) = GetApartmentHouseWithTenants((int)Math.Ceiling((i+1) * 10 * volume), $"type{i}");
-			apartmentHouses.Add(House);
-			tenants.AddRange(Tenants);
+			apartmentHouses.Add(GetApartmentHouse((int)Math.Ceiling((i + 1) * 10 * volume)));
 		}
-		
+
 		for (int i = 0; i < privateHousesCount; i++)
 		{
-			var house = GetPrivateHouse();
-			var tenant = GetTenantForPrivateHouse(house);
-			privateHouses.Add(house);
-			tenants.Add(tenant);
+			privateHouses.Add(GetPrivateHouse());
 		}
-		
+
 		for (int i = 0; i < (int)Math.Ceiling(volume * 3); i++)
 		{
 			tenants.Add(GetTenant());
 		}
-		
-		return (apartmentHouses,privateHouses,tenants);
+
+		var addresses = apartmentHouses.SelectMany(apartmentHouse => apartmentHouse.Select(apartment => apartment.Address as Address)).Concat(privateHouses.Select(house => house.Address)).OrderBy(address => _random.Next(0, 1024));
+
+		Tenant currentTenant = GetTenant();
+		foreach (var address in addresses)
+		{
+			currentTenant.AddRegistration(new(new DateOnly(_random.Next(2000, 2024), _random.Next(1, 13), _random.Next(1, 29)), address));
+
+			if (_random.Next(0, 3) != 0)
+			{
+				tenants.Add(currentTenant);
+				currentTenant = GetTenant();
+			}
+		}
+
+		IEnumerable<Building> buildings = apartmentHouses;
+		buildings = buildings.Concat(privateHouses);
+
+		return (buildings, tenants);
 	}
 }

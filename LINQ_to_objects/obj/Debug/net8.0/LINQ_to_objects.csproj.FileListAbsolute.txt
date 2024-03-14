@@ -12,3 +12,4 @@
 /disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.pdb
 /disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.genruntimeconfig.cache
 /disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/ref/LINQ_to_objects.dll
+/disks/D/sagayda/visual cock/repos/dot.net/LINQ_to_objects/obj/Debug/net8.0/LINQ_to_objects.sourcelink.json
