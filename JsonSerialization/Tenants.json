@@ -1,0 +1,342 @@
+[
+  {
+    "Name": "Олексій",
+    "Lastname": "Мельник",
+    "Middlename": "Петрович",
+    "FamilyMembersCount": 3,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": []
+  },
+  {
+    "Name": "Ірина",
+    "Lastname": "Коваленко",
+    "Middlename": "Юрійович",
+    "FamilyMembersCount": 2,
+    "ChildrenCount": 0,
+    "Debt": false,
+    "Registrations": []
+  },
+  {
+    "Name": "Катерина",
+    "Lastname": "Мельник",
+    "Middlename": "Богданович",
+    "FamilyMembersCount": 3,
+    "ChildrenCount": 2,
+    "Debt": true,
+    "Registrations": [
+      {
+        "Date": "2002-02-03T00:00:00",
+        "Address": {
+          "$type": "BuildingAddress",
+          "City": "Івано-Франківськ",
+          "Street": "Лісова",
+          "Number": "73"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Оксана",
+    "Lastname": "Смирнов",
+    "Middlename": "Іванович",
+    "FamilyMembersCount": 3,
+    "ChildrenCount": 1,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2014-01-11T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Олександр",
+    "Lastname": "Бойко",
+    "Middlename": "Русланович",
+    "FamilyMembersCount": 4,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2012-04-15T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Олександр",
+    "Lastname": "Бойко",
+    "Middlename": "Юрійович",
+    "FamilyMembersCount": 4,
+    "ChildrenCount": 1,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2017-05-27T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 9,
+          "EntranceNumber": 3,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      },
+      {
+        "Date": "2016-08-24T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Ігор",
+    "Lastname": "Коваленко",
+    "Middlename": "Дмитрович",
+    "FamilyMembersCount": 3,
+    "ChildrenCount": 0,
+    "Debt": true,
+    "Registrations": [
+      {
+        "Date": "2013-01-08T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 5,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Ігор",
+    "Lastname": "Гончаренко",
+    "Middlename": "Юрійович",
+    "FamilyMembersCount": 4,
+    "ChildrenCount": 0,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2003-10-18T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Ігор",
+    "Lastname": "Гончаренко",
+    "Middlename": "Максимович",
+    "FamilyMembersCount": 1,
+    "ChildrenCount": 0,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2011-03-03T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        }
+      },
+      {
+        "Date": "2003-06-13T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        }
+      },
+      {
+        "Date": "2009-10-06T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 5,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Андрій",
+    "Lastname": "Смирнов",
+    "Middlename": "Максимович",
+    "FamilyMembersCount": 4,
+    "ChildrenCount": 0,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2006-12-17T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 7,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Олена",
+    "Lastname": "Кравченко",
+    "Middlename": "Максимович",
+    "FamilyMembersCount": 4,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2003-11-05T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Ігор",
+    "Lastname": "Ткаченко",
+    "Middlename": "Юрійович",
+    "FamilyMembersCount": 1,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2016-02-06T00:00:00",
+        "Address": {
+          "$type": "BuildingAddress",
+          "City": "Хмельницький",
+          "Street": "Лісова",
+          "Number": "21"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Сергій",
+    "Lastname": "Григоренко",
+    "Middlename": "Сергійович",
+    "FamilyMembersCount": 1,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2014-07-19T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 6,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Андрій",
+    "Lastname": "Петренко",
+    "Middlename": "Володимирович",
+    "FamilyMembersCount": 3,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2006-04-14T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      },
+      {
+        "Date": "2021-06-18T00:00:00",
+        "Address": {
+          "$type": "BuildingAddress",
+          "City": "Дніпро",
+          "Street": "Космічна",
+          "Number": "89"
+        }
+      },
+      {
+        "Date": "2008-03-28T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 8,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Андрій",
+    "Lastname": "Осадчук",
+    "Middlename": "Максимович",
+    "FamilyMembersCount": 0,
+    "ChildrenCount": 2,
+    "Debt": false,
+    "Registrations": [
+      {
+        "Date": "2004-01-04T00:00:00",
+        "Address": {
+          "$type": "ApartmentAddress",
+          "ApartmentNumber": 10,
+          "EntranceNumber": 3,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        }
+      }
+    ]
+  }
+]

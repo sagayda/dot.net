@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializableListOfTenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Андрій</Name>
+    <Middlename>Володимирович</Middlename>
+    <Lastname>Петренко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Дмитро</Name>
+    <Middlename>Юрійович</Middlename>
+    <Lastname>Бойко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Віталій</Name>
+    <Middlename>Олександрович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Андрій</Name>
+    <Middlename>Максимович</Middlename>
+    <Lastname>Осадчук</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2023-02-04T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>18</ApartmentNumber>
+          <EntranceNumber>4</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2015-10-08T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+          <City>Маріуполь</City>
+          <Street>Першотравнева</Street>
+          <Number>99</Number>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2000-06-09T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>2</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Анна</Name>
+    <Middlename>Максимович</Middlename>
+    <Lastname>Зайченко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2021-06-24T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>12</ApartmentNumber>
+          <EntranceNumber>3</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ігор</Name>
+    <Middlename>Олександрович</Middlename>
+    <Lastname>Бойко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2014-12-26T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>26</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2016-05-14T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>5</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Дмитро</Name>
+    <Middlename>Юрійович</Middlename>
+    <Lastname>Франчук</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2011-04-06T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>3</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2014-08-26T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>28</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Євген</Name>
+    <Middlename>Іванович</Middlename>
+    <Lastname>Ткаченко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-10-25T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>17</ApartmentNumber>
+          <EntranceNumber>4</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2009-08-19T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>19</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-12-05T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>9</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олександр</Name>
+    <Middlename>Максимович</Middlename>
+    <Lastname>Іващенко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-07-25T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>1</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2002-02-22T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>18</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Євген</Name>
+    <Middlename>Дмитрович</Middlename>
+    <Lastname>Григоренко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2017-10-07T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>21</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Андрій</Name>
+    <Middlename>Юрійович</Middlename>
+    <Lastname>Бойко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-03-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>9</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-10-11T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>13</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Катерина</Name>
+    <Middlename>Олегович</Middlename>
+    <Lastname>Петренко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2016-09-13T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>12</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Анна</Name>
+    <Middlename>Ярославович</Middlename>
+    <Lastname>Пономаренко</Lastname>
+    <FamilyMembersCount>2</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2018-03-26T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>3</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Оксана</Name>
+    <Middlename>Васильович</Middlename>
+    <Lastname>Шевченко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2010-12-02T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>17</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Тетяна</Name>
+    <Middlename>Володимирович</Middlename>
+    <Lastname>Осадчук</Lastname>
+    <FamilyMembersCount>2</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2023-09-02T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>6</ApartmentNumber>
+          <EntranceNumber>2</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олексій</Name>
+    <Middlename>Богданович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-05-11T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>1</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Юлія</Name>
+    <Middlename>Богданович</Middlename>
+    <Lastname>Бойко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-06-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>8</ApartmentNumber>
+          <EntranceNumber>2</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ірина</Name>
+    <Middlename>Ігорович</Middlename>
+    <Lastname>Ткаченко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-06-21T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>27</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Сергій</Name>
+    <Middlename>Дмитрович</Middlename>
+    <Lastname>Петренко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2005-08-18T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>2</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ірина</Name>
+    <Middlename>Васильович</Middlename>
+    <Lastname>Шевченко</Lastname>
+    <FamilyMembersCount>2</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2004-01-21T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+          <City>Житомир</City>
+          <Street>Французька</Street>
+          <Number>61</Number>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-07-18T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>5</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Оксана</Name>
+    <Middlename>Русланович</Middlename>
+    <Lastname>Франчук</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2015-01-18T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>15</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ірина</Name>
+    <Middlename>Іванович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2004-12-22T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>25</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2009-11-07T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>23</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-03-19T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>5</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олексій</Name>
+    <Middlename>Дмитрович</Middlename>
+    <Lastname>Смирнов</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2001-12-28T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>8</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2021-12-05T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>22</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Юлія</Name>
+    <Middlename>Олегович</Middlename>
+    <Lastname>Яковенко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2004-08-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>16</ApartmentNumber>
+          <EntranceNumber>4</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Євген</Name>
+    <Middlename>Сергійович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2010-06-01T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>7</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2008-02-14T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>11</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Вікторія</Name>
+    <Middlename>Русланович</Middlename>
+    <Lastname>Гончаренко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2000-10-04T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>19</ApartmentNumber>
+          <EntranceNumber>4</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Катерина</Name>
+    <Middlename>Юрійович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2007-01-11T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>30</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Дмитро</Name>
+    <Middlename>Іванович</Middlename>
+    <Lastname>Іващенко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-06-27T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+          <City>Одеса</City>
+          <Street>Гагаріна</Street>
+          <Number>58</Number>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-03-12T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>8</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олександр</Name>
+    <Middlename>Ігорович</Middlename>
+    <Lastname>Бойко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2014-12-06T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>11</ApartmentNumber>
+          <EntranceNumber>3</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Сергій</Name>
+    <Middlename>Миколайович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-04-22T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>13</ApartmentNumber>
+          <EntranceNumber>3</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Віталій</Name>
+    <Middlename>Юрійович</Middlename>
+    <Lastname>Ткаченко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2002-08-25T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>10</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2023-03-27T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+          <City>Харків</City>
+          <Street>Космічна</Street>
+          <Number>17</Number>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ігор</Name>
+    <Middlename>Ігорович</Middlename>
+    <Lastname>Шевченко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2022-04-27T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>7</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олена</Name>
+    <Middlename>Віталійович</Middlename>
+    <Lastname>Франчук</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2004-04-14T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>9</ApartmentNumber>
+          <EntranceNumber>2</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Андрій</Name>
+    <Middlename>Андрійович</Middlename>
+    <Lastname>Левченко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2001-01-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>20</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-05-12T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>20</ApartmentNumber>
+          <EntranceNumber>4</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2005-02-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+          <City>Запоріжжя</City>
+          <Street>Перемоги</Street>
+          <Number>97</Number>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Олексій</Name>
+    <Middlename>Миколайович</Middlename>
+    <Lastname>Зайченко</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2009-10-10T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>4</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2008-08-27T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>24</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Євген</Name>
+    <Middlename>Богданович</Middlename>
+    <Lastname>Смирнов</Lastname>
+    <FamilyMembersCount>1</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-09-05T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>7</ApartmentNumber>
+          <EntranceNumber>2</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Іван</Name>
+    <Middlename>Васильович</Middlename>
+    <Lastname>Яковенко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-02-05T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>4</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Ігор</Name>
+    <Middlename>Олександрович</Middlename>
+    <Lastname>Франчук</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-10-14T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>14</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Віталій</Name>
+    <Middlename>Іванович</Middlename>
+    <Lastname>Пономаренко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>1</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2009-12-25T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>4</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Іван</Name>
+    <Middlename>Олександрович</Middlename>
+    <Lastname>Шевченко</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2013-06-08T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>6</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2007-03-13T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>10</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Іван</Name>
+    <Middlename>Іванович</Middlename>
+    <Lastname>Мельник</Lastname>
+    <FamilyMembersCount>0</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2004-10-06T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Рівне</City>
+          <Street>Лісова</Street>
+          <Number>76</Number>
+          <ApartmentNumber>6</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2005-09-22T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>1</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Тетяна</Name>
+    <Middlename>Русланович</Middlename>
+    <Lastname>Степаненко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2006-06-15T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>29</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2009-08-03T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>2</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2012-04-20T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>15</ApartmentNumber>
+          <EntranceNumber>3</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Андрій</Name>
+    <Middlename>Ярославович</Middlename>
+    <Lastname>Степаненко</Lastname>
+    <FamilyMembersCount>4</FamilyMembersCount>
+    <ChildrenCount>2</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2005-03-06T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>3</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Вікторія</Name>
+    <Middlename>Ярославович</Middlename>
+    <Lastname>Григоренко</Lastname>
+    <FamilyMembersCount>2</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>false</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2003-08-15T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Луцьк</City>
+          <Street>Молодіжна</Street>
+          <Number>63</Number>
+          <ApartmentNumber>16</ApartmentNumber>
+          <EntranceNumber>1</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+  <Tenant Namespace="LINQ_to_objects" Type="Tenant">
+    <Name>Оксана</Name>
+    <Middlename>Анатолійович</Middlename>
+    <Lastname>Гончаренко</Lastname>
+    <FamilyMembersCount>3</FamilyMembersCount>
+    <ChildrenCount>0</ChildrenCount>
+    <Debt>true</Debt>
+    <Registrations>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2019-02-15T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>14</ApartmentNumber>
+          <EntranceNumber>3</EntranceNumber>
+        </Address>
+      </Registration>
+      <Registration Namespace="LINQ_to_objects" Type="Registration">
+        <Date>2006-12-15T00:00:00</Date>
+        <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+          <City>Житомир</City>
+          <Street>Соборна</Street>
+          <Number>38</Number>
+          <ApartmentNumber>10</ApartmentNumber>
+          <EntranceNumber>2</EntranceNumber>
+        </Address>
+      </Registration>
+    </Registrations>
+  </Tenant>
+</SerializableListOfTenant>

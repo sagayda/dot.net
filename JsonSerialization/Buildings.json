@@ -1,0 +1,273 @@
+[
+  {
+    "$type": "ApartmentHouse",
+    "Apartments": [
+      {
+        "Address": {
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        },
+        "Type": 1,
+        "TotalArea": 92,
+        "EffectiveArea": 66,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        },
+        "Type": 0,
+        "TotalArea": 147,
+        "EffectiveArea": 84,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        },
+        "Type": 1,
+        "TotalArea": 80,
+        "EffectiveArea": 52,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        },
+        "Type": 2,
+        "TotalArea": 147,
+        "EffectiveArea": 75,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 5,
+          "EntranceNumber": 1,
+          "City": "Рівне",
+          "Street": "Лісова",
+          "Number": "76"
+        },
+        "Type": 0,
+        "TotalArea": 149,
+        "EffectiveArea": 100,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      }
+    ],
+    "Type": 2,
+    "Address": {
+      "City": "Рівне",
+      "Street": "Лісова",
+      "Number": "76"
+    }
+  },
+  {
+    "$type": "ApartmentHouse",
+    "Apartments": [
+      {
+        "Address": {
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 2,
+        "TotalArea": 88,
+        "EffectiveArea": 64,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 0,
+        "TotalArea": 91,
+        "EffectiveArea": 47,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 2,
+        "TotalArea": 78,
+        "EffectiveArea": 44,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 0,
+        "TotalArea": 103,
+        "EffectiveArea": 71,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 5,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 2,
+        "TotalArea": 69,
+        "EffectiveArea": 40,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 6,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 0,
+        "TotalArea": 85,
+        "EffectiveArea": 58,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 7,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 2,
+        "TotalArea": 55,
+        "EffectiveArea": 40,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 8,
+          "EntranceNumber": 2,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 0,
+        "TotalArea": 63,
+        "EffectiveArea": 39,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 9,
+          "EntranceNumber": 3,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 2,
+        "TotalArea": 48,
+        "EffectiveArea": 28,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "ApartmentNumber": 10,
+          "EntranceNumber": 3,
+          "City": "Чернівці",
+          "Street": "Набережна",
+          "Number": "99"
+        },
+        "Type": 0,
+        "TotalArea": 100,
+        "EffectiveArea": 62,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      }
+    ],
+    "Type": 0,
+    "Address": {
+      "City": "Чернівці",
+      "Street": "Набережна",
+      "Number": "99"
+    }
+  },
+  {
+    "$type": "PrivateHouse",
+    "Type": 1,
+    "TotalArea": 260,
+    "EffectiveArea": 174,
+    "RoomsCount": 6,
+    "FloorsCount": 3,
+    "Address": {
+      "City": "Івано-Франківськ",
+      "Street": "Лісова",
+      "Number": "73"
+    }
+  },
+  {
+    "$type": "PrivateHouse",
+    "Type": 0,
+    "TotalArea": 44,
+    "EffectiveArea": 31,
+    "RoomsCount": 3,
+    "FloorsCount": 1,
+    "Address": {
+      "City": "Дніпро",
+      "Street": "Космічна",
+      "Number": "89"
+    }
+  },
+  {
+    "$type": "PrivateHouse",
+    "Type": 1,
+    "TotalArea": 299,
+    "EffectiveArea": 186,
+    "RoomsCount": 6,
+    "FloorsCount": 3,
+    "Address": {
+      "City": "Хмельницький",
+      "Street": "Лісова",
+      "Number": "21"
+    }
+  }
+]

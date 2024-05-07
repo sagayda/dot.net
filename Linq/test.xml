@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableListOfIResidential>
+  <PrivateHouse Namespace="LINQ_to_objects" Type="PrivateHouse">
+    <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+      <City>Запоріжжя</City>
+      <Street>Перемоги</Street>
+      <Number>97</Number>
+    </Address>
+    <BuildingType>PrivateHouse</BuildingType>
+    <PrivateHouseType>Wooden</PrivateHouseType>
+    <TotalArea>268</TotalArea>
+    <EffectiveArea>199</EffectiveArea>
+    <RoomsCount>6</RoomsCount>
+    <FloorsCount>3</FloorsCount>
+  </PrivateHouse>
+  <PrivateHouse Namespace="LINQ_to_objects" Type="PrivateHouse">
+    <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+      <City>Харків</City>
+      <Street>Космічна</Street>
+      <Number>17</Number>
+    </Address>
+    <BuildingType>PrivateHouse</BuildingType>
+    <PrivateHouseType>Block</PrivateHouseType>
+    <TotalArea>267</TotalArea>
+    <EffectiveArea>170</EffectiveArea>
+    <RoomsCount>6</RoomsCount>
+    <FloorsCount>3</FloorsCount>
+  </PrivateHouse>
+  <PrivateHouse Namespace="LINQ_to_objects" Type="PrivateHouse">
+    <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+      <City>Маріуполь</City>
+      <Street>Першотравнева</Street>
+      <Number>99</Number>
+    </Address>
+    <BuildingType>PrivateHouse</BuildingType>
+    <PrivateHouseType>Wooden</PrivateHouseType>
+    <TotalArea>29</TotalArea>
+    <EffectiveArea>19</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </PrivateHouse>
+  <PrivateHouse Namespace="LINQ_to_objects" Type="PrivateHouse">
+    <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+      <City>Одеса</City>
+      <Street>Гагаріна</Street>
+      <Number>58</Number>
+    </Address>
+    <BuildingType>PrivateHouse</BuildingType>
+    <PrivateHouseType>Wooden</PrivateHouseType>
+    <TotalArea>93</TotalArea>
+    <EffectiveArea>54</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </PrivateHouse>
+  <PrivateHouse Namespace="LINQ_to_objects" Type="PrivateHouse">
+    <Address Namespace="LINQ_to_objects" Type="BuildingAddress">
+      <City>Житомир</City>
+      <Street>Французька</Street>
+      <Number>61</Number>
+    </Address>
+    <BuildingType>PrivateHouse</BuildingType>
+    <PrivateHouseType>Brick</PrivateHouseType>
+    <TotalArea>176</TotalArea>
+    <EffectiveArea>116</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </PrivateHouse>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>1</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>92</TotalArea>
+    <EffectiveArea>66</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>2</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>147</TotalArea>
+    <EffectiveArea>84</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>3</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>80</TotalArea>
+    <EffectiveArea>52</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>4</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>147</TotalArea>
+    <EffectiveArea>75</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>5</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>149</TotalArea>
+    <EffectiveArea>100</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>6</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>126</TotalArea>
+    <EffectiveArea>90</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>7</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>24</TotalArea>
+    <EffectiveArea>16</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>8</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>141</TotalArea>
+    <EffectiveArea>95</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>9</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>30</TotalArea>
+    <EffectiveArea>16</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Рівне</City>
+      <Street>Лісова</Street>
+      <Number>76</Number>
+      <ApartmentNumber>10</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>58</TotalArea>
+    <EffectiveArea>43</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>1</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>85</TotalArea>
+    <EffectiveArea>58</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>2</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>55</TotalArea>
+    <EffectiveArea>40</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>3</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>63</TotalArea>
+    <EffectiveArea>39</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>4</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>48</TotalArea>
+    <EffectiveArea>28</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>5</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>100</TotalArea>
+    <EffectiveArea>62</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>6</ApartmentNumber>
+      <EntranceNumber>2</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>134</TotalArea>
+    <EffectiveArea>95</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>7</ApartmentNumber>
+      <EntranceNumber>2</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>131</TotalArea>
+    <EffectiveArea>88</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>8</ApartmentNumber>
+      <EntranceNumber>2</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>48</TotalArea>
+    <EffectiveArea>34</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>9</ApartmentNumber>
+      <EntranceNumber>2</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>31</TotalArea>
+    <EffectiveArea>22</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>10</ApartmentNumber>
+      <EntranceNumber>2</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>103</TotalArea>
+    <EffectiveArea>73</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>11</ApartmentNumber>
+      <EntranceNumber>3</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>149</TotalArea>
+    <EffectiveArea>92</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>12</ApartmentNumber>
+      <EntranceNumber>3</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>113</TotalArea>
+    <EffectiveArea>79</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>13</ApartmentNumber>
+      <EntranceNumber>3</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>114</TotalArea>
+    <EffectiveArea>77</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>14</ApartmentNumber>
+      <EntranceNumber>3</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>137</TotalArea>
+    <EffectiveArea>75</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>15</ApartmentNumber>
+      <EntranceNumber>3</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>90</TotalArea>
+    <EffectiveArea>52</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>16</ApartmentNumber>
+      <EntranceNumber>4</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>80</TotalArea>
+    <EffectiveArea>56</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>17</ApartmentNumber>
+      <EntranceNumber>4</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>123</TotalArea>
+    <EffectiveArea>85</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>18</ApartmentNumber>
+      <EntranceNumber>4</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>58</TotalArea>
+    <EffectiveArea>36</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>19</ApartmentNumber>
+      <EntranceNumber>4</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>63</TotalArea>
+    <EffectiveArea>36</EffectiveArea>
+    <RoomsCount>3</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Житомир</City>
+      <Street>Соборна</Street>
+      <Number>38</Number>
+      <ApartmentNumber>20</ApartmentNumber>
+      <EntranceNumber>4</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>48</TotalArea>
+    <EffectiveArea>26</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>1</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>140</TotalArea>
+    <EffectiveArea>72</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>2</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>108</TotalArea>
+    <EffectiveArea>56</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>3</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>33</TotalArea>
+    <EffectiveArea>21</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>4</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>83</TotalArea>
+    <EffectiveArea>45</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>5</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>94</TotalArea>
+    <EffectiveArea>52</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>6</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>20</TotalArea>
+    <EffectiveArea>11</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>7</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>28</TotalArea>
+    <EffectiveArea>15</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>8</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>144</TotalArea>
+    <EffectiveArea>107</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>9</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>87</TotalArea>
+    <EffectiveArea>50</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>10</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>89</TotalArea>
+    <EffectiveArea>46</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>11</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>84</TotalArea>
+    <EffectiveArea>59</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>12</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>33</TotalArea>
+    <EffectiveArea>22</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>13</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>141</TotalArea>
+    <EffectiveArea>75</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>14</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>100</TotalArea>
+    <EffectiveArea>70</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>15</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>94</TotalArea>
+    <EffectiveArea>51</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>16</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>99</TotalArea>
+    <EffectiveArea>56</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>17</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>93</TotalArea>
+    <EffectiveArea>48</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>18</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>129</TotalArea>
+    <EffectiveArea>83</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>19</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>87</TotalArea>
+    <EffectiveArea>65</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>20</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>86</TotalArea>
+    <EffectiveArea>46</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>21</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>103</TotalArea>
+    <EffectiveArea>66</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>22</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>107</TotalArea>
+    <EffectiveArea>80</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>23</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>28</TotalArea>
+    <EffectiveArea>17</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>24</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>48</TotalArea>
+    <EffectiveArea>24</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>25</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Improved</ApartmentType>
+    <TotalArea>39</TotalArea>
+    <EffectiveArea>24</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>26</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>22</TotalArea>
+    <EffectiveArea>13</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>27</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>46</TotalArea>
+    <EffectiveArea>33</EffectiveArea>
+    <RoomsCount>2</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>28</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>86</TotalArea>
+    <EffectiveArea>64</EffectiveArea>
+    <RoomsCount>4</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>29</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Standart</ApartmentType>
+    <TotalArea>22</TotalArea>
+    <EffectiveArea>14</EffectiveArea>
+    <RoomsCount>1</RoomsCount>
+    <FloorsCount>1</FloorsCount>
+  </Apartment>
+  <Apartment Namespace="LINQ_to_objects" Type="Apartment">
+    <Address Namespace="LINQ_to_objects" Type="ApartmentAddress">
+      <City>Луцьк</City>
+      <Street>Молодіжна</Street>
+      <Number>63</Number>
+      <ApartmentNumber>30</ApartmentNumber>
+      <EntranceNumber>1</EntranceNumber>
+    </Address>
+    <ApartmentType>Free</ApartmentType>
+    <TotalArea>145</TotalArea>
+    <EffectiveArea>94</EffectiveArea>
+    <RoomsCount>5</RoomsCount>
+    <FloorsCount>2</FloorsCount>
+  </Apartment>
+</SerializableListOfIResidential>
