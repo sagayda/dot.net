@@ -1,5 +1,4 @@
-﻿using DataModel;
-using JsonSerialization;
+﻿using JsonSerialization;
 
 internal class Program
 {

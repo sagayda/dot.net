@@ -8,13 +8,6 @@ internal class Program
 		{
 			Select();
 		}
-
-		// TestApp app = new();
-
-		// app.Start();
-
-		// ConsoleActions.BufferArea area = new(4,1,10,10);
-		// area.Print("Domsdsdddddddddddddddddddddddddddddddddddddddddddddddddd\ntest\ntest\n\ntest2",4,2);
 	}
 
 	private static void ShowMenu()

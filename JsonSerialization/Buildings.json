@@ -1,273 +1,1008 @@
 [
   {
     "$type": "ApartmentHouse",
-    "Apartments": [
-      {
-        "Address": {
-          "ApartmentNumber": 1,
-          "EntranceNumber": 1,
-          "City": "Рівне",
-          "Street": "Лісова",
-          "Number": "76"
-        },
-        "Type": 1,
-        "TotalArea": 92,
-        "EffectiveArea": 66,
-        "RoomsCount": 4,
-        "FloorsCount": 1
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 2,
-          "EntranceNumber": 1,
-          "City": "Рівне",
-          "Street": "Лісова",
-          "Number": "76"
-        },
-        "Type": 0,
-        "TotalArea": 147,
-        "EffectiveArea": 84,
-        "RoomsCount": 5,
-        "FloorsCount": 2
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 3,
-          "EntranceNumber": 1,
-          "City": "Рівне",
-          "Street": "Лісова",
-          "Number": "76"
-        },
-        "Type": 1,
-        "TotalArea": 80,
-        "EffectiveArea": 52,
-        "RoomsCount": 4,
-        "FloorsCount": 1
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 4,
-          "EntranceNumber": 1,
-          "City": "Рівне",
-          "Street": "Лісова",
-          "Number": "76"
-        },
-        "Type": 2,
-        "TotalArea": 147,
-        "EffectiveArea": 75,
-        "RoomsCount": 5,
-        "FloorsCount": 2
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 5,
-          "EntranceNumber": 1,
-          "City": "Рівне",
-          "Street": "Лісова",
-          "Number": "76"
-        },
-        "Type": 0,
-        "TotalArea": 149,
-        "EffectiveArea": 100,
-        "RoomsCount": 5,
-        "FloorsCount": 2
-      }
-    ],
-    "Type": 2,
     "Address": {
+      "$type": "BuildingAddress",
       "City": "Рівне",
-      "Street": "Лісова",
-      "Number": "76"
-    }
-  },
-  {
-    "$type": "ApartmentHouse",
+      "Street": "Шевченка",
+      "Number": "63"
+    },
+    "Type": 3,
     "Apartments": [
       {
         "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
           "ApartmentNumber": 1,
-          "EntranceNumber": 1,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
-        },
-        "Type": 2,
-        "TotalArea": 88,
-        "EffectiveArea": 64,
-        "RoomsCount": 4,
-        "FloorsCount": 1
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 2,
-          "EntranceNumber": 1,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "EntranceNumber": 1
         },
         "Type": 0,
-        "TotalArea": 91,
-        "EffectiveArea": 47,
-        "RoomsCount": 4,
+        "TotalArea": 27,
+        "EffectiveArea": 15,
+        "RoomsCount": 1,
         "FloorsCount": 1
       },
       {
         "Address": {
-          "ApartmentNumber": 3,
-          "EntranceNumber": 1,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1
         },
-        "Type": 2,
-        "TotalArea": 78,
-        "EffectiveArea": 44,
+        "Type": 0,
+        "TotalArea": 28,
+        "EffectiveArea": 16,
+        "RoomsCount": 1,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 69,
+        "EffectiveArea": 43,
         "RoomsCount": 3,
         "FloorsCount": 1
       },
       {
         "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
           "ApartmentNumber": 4,
-          "EntranceNumber": 1,
+          "EntranceNumber": 2
+        },
+        "Type": 2,
+        "TotalArea": 37,
+        "EffectiveArea": 25,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 5,
+          "EntranceNumber": 2
+        },
+        "Type": 2,
+        "TotalArea": 80,
+        "EffectiveArea": 44,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 6,
+          "EntranceNumber": 2
+        },
+        "Type": 2,
+        "TotalArea": 71,
+        "EffectiveArea": 52,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 7,
+          "EntranceNumber": 3
+        },
+        "Type": 2,
+        "TotalArea": 20,
+        "EffectiveArea": 13,
+        "RoomsCount": 1,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 8,
+          "EntranceNumber": 3
+        },
+        "Type": 2,
+        "TotalArea": 77,
+        "EffectiveArea": 48,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 9,
+          "EntranceNumber": 3
+        },
+        "Type": 1,
+        "TotalArea": 104,
+        "EffectiveArea": 57,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Рівне",
+          "Street": "Шевченка",
+          "Number": "63",
+          "ApartmentNumber": 10,
+          "EntranceNumber": 4
+        },
+        "Type": 1,
+        "TotalArea": 24,
+        "EffectiveArea": 12,
+        "RoomsCount": 1,
+        "FloorsCount": 1
+      }
+    ]
+  },
+  {
+    "$type": "ApartmentHouse",
+    "Address": {
+      "$type": "BuildingAddress",
+      "City": "Чернівці",
+      "Street": "Соборна",
+      "Number": "50"
+    },
+    "Type": 0,
+    "Apartments": [
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
           "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1
         },
         "Type": 0,
-        "TotalArea": 103,
+        "TotalArea": 98,
+        "EffectiveArea": 68,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 61,
+        "EffectiveArea": 41,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 32,
+        "EffectiveArea": 20,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 124,
+        "EffectiveArea": 74,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 5,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 75,
+        "EffectiveArea": 54,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 6,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 123,
+        "EffectiveArea": 69,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 7,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 40,
+        "EffectiveArea": 22,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 8,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 120,
+        "EffectiveArea": 76,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 9,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 38,
+        "EffectiveArea": 25,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 10,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 62,
+        "EffectiveArea": 32,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 11,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 116,
         "EffectiveArea": 71,
         "RoomsCount": 4,
         "FloorsCount": 1
       },
       {
         "Address": {
-          "ApartmentNumber": 5,
-          "EntranceNumber": 2,
+          "$type": "ApartmentAddress",
           "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 12,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 35,
+        "EffectiveArea": 20,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 13,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 122,
+        "EffectiveArea": 80,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 14,
+          "EntranceNumber": 1
         },
         "Type": 2,
-        "TotalArea": 69,
-        "EffectiveArea": 40,
+        "TotalArea": 94,
+        "EffectiveArea": 61,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 15,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 72,
+        "EffectiveArea": 52,
         "RoomsCount": 3,
         "FloorsCount": 1
       },
       {
         "Address": {
-          "ApartmentNumber": 6,
-          "EntranceNumber": 2,
+          "$type": "ApartmentAddress",
           "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 16,
+          "EntranceNumber": 1
         },
         "Type": 0,
-        "TotalArea": 85,
+        "TotalArea": 39,
+        "EffectiveArea": 21,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 17,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 22,
+        "EffectiveArea": 14,
+        "RoomsCount": 1,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 18,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 71,
+        "EffectiveArea": 42,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Чернівці",
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 19,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 82,
         "EffectiveArea": 58,
         "RoomsCount": 4,
         "FloorsCount": 1
       },
       {
         "Address": {
-          "ApartmentNumber": 7,
-          "EntranceNumber": 2,
+          "$type": "ApartmentAddress",
           "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
-        },
-        "Type": 2,
-        "TotalArea": 55,
-        "EffectiveArea": 40,
-        "RoomsCount": 3,
-        "FloorsCount": 1
-      },
-      {
-        "Address": {
-          "ApartmentNumber": 8,
-          "EntranceNumber": 2,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "Street": "Соборна",
+          "Number": "50",
+          "ApartmentNumber": 20,
+          "EntranceNumber": 1
         },
         "Type": 0,
-        "TotalArea": 63,
-        "EffectiveArea": 39,
+        "TotalArea": 110,
+        "EffectiveArea": 59,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      }
+    ]
+  },
+  {
+    "$type": "ApartmentHouse",
+    "Address": {
+      "$type": "BuildingAddress",
+      "City": "Житомир",
+      "Street": "Шкільна",
+      "Number": "44"
+    },
+    "Type": 3,
+    "Apartments": [
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 1,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 143,
+        "EffectiveArea": 93,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 2,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 104,
+        "EffectiveArea": 65,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 3,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 97,
+        "EffectiveArea": 56,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 4,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 108,
+        "EffectiveArea": 73,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 5,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 105,
+        "EffectiveArea": 57,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 6,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 77,
+        "EffectiveArea": 42,
         "RoomsCount": 3,
         "FloorsCount": 1
       },
       {
         "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 7,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 80,
+        "EffectiveArea": 54,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 8,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 35,
+        "EffectiveArea": 24,
+        "RoomsCount": 2,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
           "ApartmentNumber": 9,
-          "EntranceNumber": 3,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 71,
+        "EffectiveArea": 43,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 10,
+          "EntranceNumber": 1
         },
         "Type": 2,
-        "TotalArea": 48,
+        "TotalArea": 79,
+        "EffectiveArea": 45,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 11,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 126,
+        "EffectiveArea": 77,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 12,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 130,
+        "EffectiveArea": 74,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 13,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 132,
+        "EffectiveArea": 82,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 14,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 100,
+        "EffectiveArea": 74,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 15,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 119,
+        "EffectiveArea": 62,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 16,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 79,
+        "EffectiveArea": 51,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 17,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 43,
         "EffectiveArea": 28,
         "RoomsCount": 2,
         "FloorsCount": 1
       },
       {
         "Address": {
-          "ApartmentNumber": 10,
-          "EntranceNumber": 3,
-          "City": "Чернівці",
-          "Street": "Набережна",
-          "Number": "99"
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 18,
+          "EntranceNumber": 1
         },
         "Type": 0,
-        "TotalArea": 100,
-        "EffectiveArea": 62,
+        "TotalArea": 81,
+        "EffectiveArea": 60,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 19,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 111,
+        "EffectiveArea": 79,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 20,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 106,
+        "EffectiveArea": 59,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 21,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 138,
+        "EffectiveArea": 73,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 22,
+          "EntranceNumber": 1
+        },
+        "Type": 0,
+        "TotalArea": 116,
+        "EffectiveArea": 82,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 23,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 113,
+        "EffectiveArea": 79,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 24,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 79,
+        "EffectiveArea": 51,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 25,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 123,
+        "EffectiveArea": 88,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 26,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 54,
+        "EffectiveArea": 31,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 27,
+          "EntranceNumber": 1
+        },
+        "Type": 2,
+        "TotalArea": 132,
+        "EffectiveArea": 96,
+        "RoomsCount": 5,
+        "FloorsCount": 2
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 28,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 95,
+        "EffectiveArea": 54,
+        "RoomsCount": 4,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 29,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 58,
+        "EffectiveArea": 34,
+        "RoomsCount": 3,
+        "FloorsCount": 1
+      },
+      {
+        "Address": {
+          "$type": "ApartmentAddress",
+          "City": "Житомир",
+          "Street": "Шкільна",
+          "Number": "44",
+          "ApartmentNumber": 30,
+          "EntranceNumber": 1
+        },
+        "Type": 1,
+        "TotalArea": 101,
+        "EffectiveArea": 54,
         "RoomsCount": 4,
         "FloorsCount": 1
       }
-    ],
-    "Type": 0,
-    "Address": {
-      "City": "Чернівці",
-      "Street": "Набережна",
-      "Number": "99"
-    }
+    ]
   },
   {
     "$type": "PrivateHouse",
-    "Type": 1,
-    "TotalArea": 260,
-    "EffectiveArea": 174,
-    "RoomsCount": 6,
-    "FloorsCount": 3,
     "Address": {
-      "City": "Івано-Франківськ",
-      "Street": "Лісова",
-      "Number": "73"
-    }
+      "$type": "BuildingAddress",
+      "City": "Луцьк",
+      "Street": "Шевченка",
+      "Number": "24"
+    },
+    "Type": 2,
+    "TotalArea": 133,
+    "EffectiveArea": 90,
+    "RoomsCount": 4,
+    "FloorsCount": 2
   },
   {
     "$type": "PrivateHouse",
-    "Type": 0,
-    "TotalArea": 44,
-    "EffectiveArea": 31,
-    "RoomsCount": 3,
-    "FloorsCount": 1,
     "Address": {
-      "City": "Дніпро",
-      "Street": "Космічна",
-      "Number": "89"
-    }
-  },
-  {
-    "$type": "PrivateHouse",
-    "Type": 1,
-    "TotalArea": 299,
-    "EffectiveArea": 186,
-    "RoomsCount": 6,
-    "FloorsCount": 3,
-    "Address": {
-      "City": "Хмельницький",
-      "Street": "Лісова",
+      "$type": "BuildingAddress",
+      "City": "Київ",
+      "Street": "Соборна",
       "Number": "21"
-    }
+    },
+    "Type": 2,
+    "TotalArea": 170,
+    "EffectiveArea": 116,
+    "RoomsCount": 4,
+    "FloorsCount": 2
+  },
+  {
+    "$type": "PrivateHouse",
+    "Address": {
+      "$type": "BuildingAddress",
+      "City": "Луцьк",
+      "Street": "Молодіжна",
+      "Number": "3"
+    },
+    "Type": 0,
+    "TotalArea": 259,
+    "EffectiveArea": 173,
+    "RoomsCount": 6,
+    "FloorsCount": 3
+  },
+  {
+    "$type": "PrivateHouse",
+    "Address": {
+      "$type": "BuildingAddress",
+      "City": "Донецьк",
+      "Street": "Миру",
+      "Number": "48"
+    },
+    "Type": 0,
+    "TotalArea": 108,
+    "EffectiveArea": 75,
+    "RoomsCount": 3,
+    "FloorsCount": 1
+  },
+  {
+    "$type": "PrivateHouse",
+    "Address": {
+      "$type": "BuildingAddress",
+      "City": "Дніпро",
+      "Street": "Першотравнева",
+      "Number": "85"
+    },
+    "Type": 1,
+    "TotalArea": 136,
+    "EffectiveArea": 83,
+    "RoomsCount": 4,
+    "FloorsCount": 2
   }
 ]
