@@ -2,15 +2,15 @@
 
 public class ResourceStack
 {
-	public IResource Resource { get; }
+	public Resource Resource { get; }
 	public int Amount { get; private set; }
 
-	public ResourceStack(IResource resource)
+	public ResourceStack(Resource resource)
 	{
 		Resource = resource;
 	}
 
-	public ResourceStack(IResource resource, int amount)
+	public ResourceStack(Resource resource, int amount)
 	{
 		Resource = resource;
 		Amount = amount;

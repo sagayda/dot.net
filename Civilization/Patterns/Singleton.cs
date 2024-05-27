@@ -3,15 +3,15 @@
 
 public class Singleton<T> where T : class
 {
-	private static T? instance = null;
+	private static T? _instance = null;
 
 	public static T Instance
 	{
 		get
 		{
-			if (instance != null)
+			if (_instance != null)
 			{
-				return instance;
+				return _instance;
 			}
 			else
 			{
@@ -21,10 +21,10 @@ public class Singleton<T> where T : class
 
 		set
 		{
-			if(instance is not null && value != instance)
+			if(_instance is not null && value != _instance)
 				throw new InvalidOperationException("Singleton instanse is already initialized");
 			
-			instance = value;
+			_instance = value;
 		}
 	}
 }

@@ -1,8 +1,8 @@
 ﻿namespace Civilization;
 
-public struct CivilizationStats
+public readonly struct CivilizationStats
 {
-	public int Economy { get; init; }
-	public int Industry { get; init; }
-	public int Aggression { get; init; }
+	public readonly int Economy { get; init; }
+	public readonly int Industry { get; init; }
+	public readonly int Aggression { get; init; }
 }

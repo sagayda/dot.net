@@ -4,7 +4,7 @@ public class ResourceWallet
 {
 	private readonly List<ResourceStack> _resources = [];
 
-	public ResourceStack this[IResource resource]
+	public ResourceStack this[Resource resource]
 	{
 		get
 		{
@@ -19,7 +19,7 @@ public class ResourceWallet
 		stored.Unite(stack);
 	}
 
-	public ResourceStack Withdraw(IResource resource, int amount)
+	public ResourceStack Withdraw(Resource resource, int amount)
 	{
 		var stored = GetStack(resource, true);
 
@@ -54,7 +54,7 @@ public class ResourceWallet
 			Satisfy(request);
 	}
 
-	private ResourceStack GetStack(IResource resource, bool throwOnFailure = false)
+	private ResourceStack GetStack(Resource resource, bool throwOnFailure = false)
 	{
 		var stored = _resources.FirstOrDefault(r => r.Resource.Equals(resource));
 

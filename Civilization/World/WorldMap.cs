@@ -4,10 +4,12 @@ namespace Civilization;
 
 public partial class WorldMap : ITickable
 {
+	private int _currentTick = 0;
 	private readonly Territory[] _territories;
 	private readonly List<Civilization> _civilizations;
 	
 	public ReadOnlyCollection<Territory> Territories => _territories.AsReadOnly();
+	public int CurrentTick => _currentTick;
 	
 	public WorldMap(Territory[] territories)
 	{
@@ -18,8 +20,11 @@ public partial class WorldMap : ITickable
 	public Territory[] GetTerritoriesFor(Civilization civilization)
 	{
 		return _territories.Where(t => t.Owner == civilization).ToArray();
-		
-		// return _territories.Where(t => t.Units.Any(u => u.Owner == civilization)).ToArray();
+	}
+	
+	public Building[] GetBuildingsFor(Civilization civilization)
+	{
+		return _territories.Where(t => t.Owner == civilization).SelectMany(t => t.Buildings).ToArray();
 	}
 	
 	public HumanCivilization CreateHumans()
@@ -39,5 +44,7 @@ public partial class WorldMap : ITickable
 
 		foreach (var civilization in _civilizations)
 			civilization.Tick();
+
+		_currentTick++;
 	}
 }

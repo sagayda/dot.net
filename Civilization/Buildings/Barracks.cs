@@ -10,7 +10,7 @@ public class Barracks : Building, IUnitFactory
 	public override ReadOnlyCollection<ResourceRequest> ResourcesToBuild { get; }
 	public ReadOnlyCollection<ResourceRequest> ResourcesPerUnit { get; }
 
-	public UnitGroup TrainedUnits { get; private set; }
+	public UnitList TrainedUnits { get; private set; }
 
 	public Barracks(Territory territory) : base(territory)
 	{
@@ -18,15 +18,15 @@ public class Barracks : Building, IUnitFactory
 
 		ResourcesToBuild = new ReadOnlyCollection<ResourceRequest>(
 		[
-			new(new Iron(), 20),
-			new(new Wood(), 50)
+			new(Resource.Iron, 20),
+			new(Resource.Wood, 50)
 		]);
 
 		ResourcesPerUnit = new ReadOnlyCollection<ResourceRequest>(
 		[
-			new(new Civilians(), 1),
-			new(new Iron(), 5),
-			new(new Food(), 5)
+			new(Resource.Civilians, 1),
+			new(Resource.Iron, 5),
+			new(Resource.Food, 5)
 		]);
 	}
 

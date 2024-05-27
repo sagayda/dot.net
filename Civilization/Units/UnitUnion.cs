@@ -1,50 +1,57 @@
 ﻿namespace Civilization;
 
-public class UnitUnion : UnitGroup
+public class UnitUnion : UnitList
 {
 	public Territory Location { get; private set; }
+	public Civilization Owner { get; }
 
-	public UnitUnion() : base()
+	public UnitUnion(IEnumerable<Unit> units, Civilization owner) : base()
 	{
-		UnitAdded += OnUnitAdded;
-		UnitRemoved += OnUnitRemoved;
-
-		Location = Singleton<WorldMap>.Instance.Territories[0];
+		Location = owner.Base;
+		Owner = owner;
+		
+		Add(units);
 	}
 
-	public UnitUnion(Territory location) : base()
+	public UnitUnion(IEnumerable<Unit> units, Territory location, Civilization owner)
 	{
-		UnitAdded += OnUnitAdded;
-		UnitRemoved += OnUnitRemoved;
-
 		Location = location;
+		Owner = owner;
+
+		Add(units);
 	}
 
-	public UnitUnion(string name) : base(name)
+	public UnitUnion(Civilization owner) : base()
 	{
-		UnitAdded += OnUnitAdded;
-		UnitRemoved += OnUnitRemoved;
-
-		Location = Singleton<WorldMap>.Instance.Territories[0];
+		Location = owner.Base;
+		Owner = owner;
 	}
 
-	public UnitUnion(string name, Territory location) : base(name)
+	public UnitUnion(Territory location, Civilization owner) : base()
 	{
-		UnitAdded += OnUnitAdded;
-		UnitRemoved += OnUnitRemoved;
-
 		Location = location;
+		Owner = owner;
 	}
 
-	private void OnUnitAdded(object? sender, UnitEnumerableEventArgs args)
+	// public UnitUnion(string name) : base(name)
+	// {
+	// 	Location = Singleton<WorldMap>.Instance.Territories[0];
+	// }
+
+	// public UnitUnion(string name, Territory location) : base(name)
+	// {
+	// 	Location = location;
+	// }
+
+	protected override void OnUnitAdded(Unit unit)
 	{
-		args.Unit.Union = this;
-		args.Unit.Location = Location;
+		unit.Union = this;
+		unit.MoveTo(Location);
 	}
 
-	private void OnUnitRemoved(object? sender, UnitEnumerableEventArgs args)
+	protected override void OnUnitRemoved(Unit unit)
 	{
-		args.Unit.Union = null;
+		unit.Union = null;
 	}
 
 	public void MoveTo(Territory location)
@@ -53,6 +60,16 @@ public class UnitUnion : UnitGroup
 			unit.MoveTo(location);
 
 		Location = location;
+	}
+
+	public override UnitList ToList()
+	{
+		return new UnitList(Units, Name);
+	}
+
+	public override UnitUnion ToUnion(Civilization owner)
+	{
+		return this;
 	}
 
 }

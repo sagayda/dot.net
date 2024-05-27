@@ -11,4 +11,8 @@
     <Folder Include="Civilizations/" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ANSI.Console" Version="2.5.0" />
+  </ItemGroup>
+
 </Project>

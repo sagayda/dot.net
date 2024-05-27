@@ -6,6 +6,6 @@ public interface IUnitFactory
 {
 	public Civilization? Owner { get; }
 	public ReadOnlyCollection<ResourceRequest> ResourcesPerUnit { get; }
-	public UnitGroup TrainedUnits { get; }
+	public UnitList TrainedUnits { get; }
 	public void Create(ResourceWallet wallet, Civilization requesting);
 }

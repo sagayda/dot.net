@@ -2,10 +2,10 @@
 
 public readonly struct ResourceRequest
 {
-	public readonly IResource Resource;
+	public readonly Resource Resource;
 	public readonly int Amount;
 
-	public ResourceRequest(IResource resource, int amount)
+	public ResourceRequest(Resource resource, int amount)
 	{
 		Resource = resource;
 		Amount = amount;

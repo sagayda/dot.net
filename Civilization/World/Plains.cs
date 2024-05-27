@@ -7,13 +7,34 @@ public class Plains : Territory, IResourceFactory
 	public ResourceRequest ProductionDescription { get; }
 	public ResourceStack Storage { get; }
 
-    public UnitUnion AssignedUnits {get;}
+	private UnitUnion? _assignedUnits = null;
+	public UnitUnion? AssignedUnits
+	{
+		get
+		{
+			return _assignedUnits;
+		}
+
+		set
+		{
+			if (value == null)
+			{
+				_assignedUnits = value;
+				return;
+			}
+
+			if (value.Owner != Owner)
+				return;
+
+			value.MoveTo(this);
+			_assignedUnits = value;
+		}
+	}
 
     public Plains()
 	{
-		AssignedUnits = new(this);
-		ProductionDescription = new(new Food(), 2);
-		Storage = new(new Food());
+		ProductionDescription = new(Resource.Food, 2);
+		Storage = new(Resource.Food);
 
 		Stats = new()
 		{
@@ -30,7 +51,7 @@ public class Plains : Territory, IResourceFactory
 	
 	public void ProduceResource()
 	{
-		int producingAmount = ProductionDescription.Amount * (AssignedUnits.GetGroupStats().WorkEfficiency / 100);
+		int producingAmount = ProductionDescription.Amount * (AssignedUnits?.GetGroupStats().WorkEfficiency / 100) ?? 0;
 		
 		Storage.Add(producingAmount);
 	}

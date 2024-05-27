@@ -3,16 +3,19 @@
 public abstract class Civilization : ITickable
 {
 	// private readonly List<Unit> _units = [];
-	private readonly HashSet<Unit> _unassignedUnits = [];
-	private readonly List<UnitGroup> _unitsGroups = [];
+	private readonly UnitList _unassignedUnits = [];
+	private readonly List<UnitUnion> _unitUnions = [];
 	private readonly Territory _base;
 	private readonly ResourceWallet _resourceWallet = new();
 
-	public IReadOnlyCollection<UnitGroup> UnitsGroups => _unitsGroups;
+	public IUnitEnumerable UnassignedUnits => _unassignedUnits;
+	public IReadOnlyCollection<UnitUnion> UnitsUnions => _unitUnions;
 	public IReadOnlyList<Territory> Territories => Singleton<WorldMap>.Instance.GetTerritoriesFor(this);
+	public IReadOnlyList<Building> Buildings => Singleton<WorldMap>.Instance.GetBuildingsFor(this);
 
 	public abstract string Name { get; }
 
+	public ResourceWallet Wallet => _resourceWallet;
 	public Territory Base => _base;
 	public CivilizationStats Stats { get; }
 	public Race Race { get; }
@@ -34,18 +37,18 @@ public abstract class Civilization : ITickable
 		for (int i = 0; i < 10; i++)
 			_unassignedUnits.Add(new Swordsman(this));
 
-		_resourceWallet[new Wood()].Add(100);
-		_resourceWallet[new Iron()].Add(100);
-		_resourceWallet[new Fuel()].Add(100);
-		_resourceWallet[new Food()].Add(100);
-		_resourceWallet[new Civilians()].Add(50);
+		_resourceWallet[Resource.Wood].Add(100);
+		_resourceWallet[Resource.Iron].Add(100);
+		_resourceWallet[Resource.Fuel].Add(100);
+		_resourceWallet[Resource.Food].Add(100);
+		_resourceWallet[Resource.Civilians].Add(50);
 
 		_base.Capture(this);
 	}
 
 	public void Tick()
 	{
-		var population = _resourceWallet[new Civilians()];
+		var population = _resourceWallet[Resource.Civilians];
 
 		population.Add((int)Math.Floor(population.Amount * Race.Stats.ReproductionRate));
 	}
@@ -60,21 +63,25 @@ public abstract class Civilization : ITickable
 
 	public void CollectTrainedUnits()
 	{
-		var unitFactories = Territories.SelectMany(t => t.Buildings).Where(b => b is IUnitFactory).Select(b => (IUnitFactory)b);
-		//problem not unassign
+		var unitFactories = Buildings.Where(b => b is IUnitFactory).Select(b => (IUnitFactory)b);
+
 		foreach (var unitFactory in unitFactories)
-			foreach (var unit in unitFactory.TrainedUnits)
-				_unassignedUnits.Add(unit);
+		{
+			_unassignedUnits.Add(unitFactory.TrainedUnits);
+			unitFactory.TrainedUnits.Clear();
+		}
 	}
-
-	public UnitGroup GroupUnassignedUnits()
+	
+	public UnitUnion CreateUnion(IUnitEnumerable units, string name)
 	{
-		UnitGroup group = new(_unassignedUnits);
-
-		_unassignedUnits.Clear();
-		_unitsGroups.Add(group);
-
-		return group;
+		var union = units.ToUnion(this);
+		
+		_unitUnions.Add(union);
+		_unassignedUnits.Remove(union);
+		
+		union.Name = name;
+		
+		return union;
 	}
 
 	public bool TryBuildAccademy(Territory territory, out Academy academy)

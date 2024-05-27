@@ -56,7 +56,7 @@ public abstract class Unit : ITickable
 	
 	public void MoveTo(Territory territory)
 	{
-		Location.RemoveUnit(this);
+		Location?.RemoveUnit(this);
 		Location = territory;
 		territory.AddUnit(this);
 	}

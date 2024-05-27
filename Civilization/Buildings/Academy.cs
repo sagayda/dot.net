@@ -5,12 +5,12 @@ namespace Civilization;
 public class Academy : Building, IUnitFactory
 {
 	public Civilization? Owner => Location.Owner;
-	public override string Name => "Barracks";
+	public override string Name => "Academy";
 
 	public override ReadOnlyCollection<ResourceRequest> ResourcesToBuild { get; }
 	public ReadOnlyCollection<ResourceRequest> ResourcesPerUnit { get; }
 
-	public UnitGroup TrainedUnits {get; private set;}
+	public UnitList TrainedUnits {get; private set;}
 
 	public Academy(Territory territory) : base(territory)
 	{
@@ -18,14 +18,14 @@ public class Academy : Building, IUnitFactory
 		
 		ResourcesToBuild = new ReadOnlyCollection<ResourceRequest>(
 		[
-			new(new Iron(), 20),
-			new(new Wood(), 50)
+			new(Resource.Iron, 20),
+			new(Resource.Wood, 50)
 		]);
 
 		ResourcesPerUnit = new ReadOnlyCollection<ResourceRequest>(
 		[
-			new(new Civilians(), 1),
-			new(new Food(), 3)
+			new(Resource.Civilians, 1),
+			new(Resource.Food, 3)
 		]);
 	}
 
